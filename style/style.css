@@ -1,0 +1,59 @@
+h4 {
+    margin-top: 10px;
+}
+
+#box_home {
+	display: block;
+    /*border: 1px solid;*/
+    width: 79%;
+    float: left;
+}
+
+#box_home > ul {
+    border: 1px solid;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#box_home > ul li {
+    float: left;
+    margin-right: 25px;
+}
+
+#box_home > ul:last-child {
+    margin-bottom: 0;
+}
+
+#box_busca {
+	display: block;
+    position: fixed;
+    right: 0;
+    width: 20%;
+    padding: 5px;
+    border-left: 2px solid black;
+    height: 100%;
+}
+
+#box_busca ul {
+	padding: 0px;
+}
+#box_busca li {
+    background-color: yellow;
+    outline: 1px solid;
+    margin-bottom: 5px;
+}
+
+#box_busca li:hover {
+    cursor: move;
+    outline: 2px solid;
+}
+
+ul > li {
+    list-style: none;
+}
+
+.sortable-list > li {
+	padding: 5px;
+	cursor: move;
+	outline: 1px solid;
+}
