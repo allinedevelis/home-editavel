@@ -44,14 +44,22 @@ $listas = [
         <section id="box_busca">
             <h4>Pesquisa</h4>
             <input id="input_busca" type="text" placeholder="in development">
-            <ul id="busca_slider" class="sortable-list list-busca">
+            <ul id="busca_results" class="sortable-list list-results">
                 <li id="post1" class="sortable-item">Post 1</li>
                 <li id="post2" class="sortable-item">Post 2</li>
                 <li id="post3" class="sortable-item">Post 3</li>
                 <li id="post4" class="sortable-item">Post 4</li>
                 <li id="post5" class="sortable-item">Post 5</li>    
             </ul>
+
+<!--             <div class="box-lixeira">
+                <strong>sortable-lixeira</strong>
+                <ul id="box_lixeira" class="sortable-list list-lixeira"></ul>
+            </div> -->
+
+            <button onclick="javascript:getPosts();">posts</button>
         </section>
     </body>
     <script src="scripts/script.js"></script>
+
 </html>

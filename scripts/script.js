@@ -12,12 +12,38 @@ var idsString = idArr.map(function(val){
 }).join(',');
 console.log(idsString);
 
-$(".sortable-list").sortable({ // begin sortable
+$(".sortable-list").sortable({
 	connectWith: idsString,
-	receive: function(event, ui) { // begin receive
+	receive: function(event, ui) {
 		
 	}
 })
+
+$('.sortable-lixeira').sortable({
+  connectWith: idsString,
+  receive: function(event, ui) {
+    
+  }
+})
+
+function getPosts() {
+  var items = {};
+  $( ".sortable-list" ).each(function( index ) {
+    var elem = $(this);
+    if (elem.children().length>0) {
+      var key = elem.attr('id');
+      console.log(key)
+      var value = [];
+      elem.children().each(function(){
+        value.push( $(this).attr('id') );
+      })
+
+      items[key] = value;
+    }
+  });
+
+  alert(JSON.stringify(items));
+}
 
 //TODO => Autocomplete
 $( function() {

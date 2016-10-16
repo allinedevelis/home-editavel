@@ -36,6 +36,9 @@ h4 {
 
 #box_busca ul {
 	padding: 0px;
+    background-color: gray;
+    padding: 5px;
+    min-height: 100px;
 }
 #box_busca li {
     background-color: yellow;
