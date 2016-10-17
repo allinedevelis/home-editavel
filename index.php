@@ -250,46 +250,7 @@
         ui.sender.sortable("cancel");
 	  },
     }).disableSelection();
-
-    $("#busca_slider").sortable({
-    	connectWith: ".list-slider"
-  	});
-    $("#busca_ultimas").sortable({
-      connectWith: ".list-ultimas"
-    });
-    $("#busca_jb").sortable({
-      connectWith: ".list-jb"
-    });
-    $("#busca_saude").sortable({
-      connectWith: ".list-saude"
-    });
-    $("#busca_belezamoda").sortable({
-      connectWith: ".list-belezamoda"
-    });
-    $("#busca_diy").sortable({
-      connectWith: ".list-diy"
-    });
-    $("#busca_receitas").sortable({
-      connectWith: ".list-receitas"
-    });
-    $("#busca_famosos").sortable({
-      connectWith: ".list-famosos"
-    });
-    $("#busca_resumos").sortable({
-      connectWith: ".list-resumos"
-    });
-    $("#busca_listas").sortable({
-      connectWith: ".list-listas"
-    });
-    $("#busca_videos").sortable({
-      connectWith: ".list-videos"
-    });
-    $("#busca_testes").sortable({
-      connectWith: ".list-testes"
-    });
-    $("#busca_sexo").sortable({
-      connectWith: ".list-sexo"
-    });
+    
   });
 
   function getNomeSecao(obj, tipoRemove = 'box_'){
